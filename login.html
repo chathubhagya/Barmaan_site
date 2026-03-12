@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barmaan Login</title>
+
+<!-- Bootstrap -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('assets/img/hero_cover_bg.png');
+    background-size:cover;
+}
+
+.login-card{
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    width:500px;
+    box-shadow:0 10px 40px rgba(223, 25, 25, 0.842);
+}
+
+.login-card h2{
+    font-weight:700;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.form-control{
+    height:45px;
+}
+
+.btn-login{
+    width:100%;
+    height:45px;
+    font-weight:600;
+}
+
+.company-logo{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.company-logo h3{
+    font-weight:700;
+}
+.btn-login{
+    width:100%;
+    height:45px;
+    background:#ff4a17;   /* Blue color */
+    color:#fff;
+    font-weight:600;
+    border:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.btn-login:hover{
+    background:#ff4a17;   /* Darker blue on hover */
+    color:#fff;
+}
+.form-control:focus {
+  border-color: #ccc;   /* normal light border */
+  box-shadow: none;     /* removes the blue glow */
+  outline: none;
+}
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  background-color: #f0f0f0; /* background color */
+  border: 2px solid #ff4a17; /* border color */
+  accent-color: #ff4a17;     /* color of checkmark */
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #ff4a17; /* checked background color */
+  border-color: #ff4a17;     /* checked border color */
+}
+
+.form-check-label {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.form-check-input:focus {
+  border-color: #ff4a17; /* focus border color */
+  box-shadow: 0 0 0 3px rgba(255, 74, 23, 0.2); /* subtle focus shadow */
+}
+.shadow {
+  background-color: #ffffff; /* form background */
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="login-card shadow">
+
+<div class="company-logo">
+<h3 style="color: #273d4e;">Login</h3>
+<p class="text-muted">The Barmaan company</p>
+</div>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">Email Address</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Password</label>
+<input type="password" class="form-control" placeholder="Enter your password">
+</div>
+
+<div class="d-flex justify-content-between mb-3">
+
+<div class="form-check">
+  <input type="checkbox" id="remember" class="form-check-input">
+  <label for="remember" class="form-check-label">Remember</label>
+</div>
+
+<a href="#" class="text-decoration-none" style="color: #273d4e;">Forgot Password?</a>
+
+</div>
+
+<button class="btn btn-login btn-login">
+<i class="bi bi-box-arrow-in-right"></i> Login
+</button>
+
+</form>
+
+<hr>
+
+<p class="text-center text-muted">
+© Barmaan Company Portal
+</p>
+
+</div>
+
+</body>
+</html>

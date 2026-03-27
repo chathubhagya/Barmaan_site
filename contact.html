@@ -62,7 +62,32 @@
       font-size: 1rem;
       margin-bottom: 0;
     }
-  </style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2)!important;
+}
+
+.modal-content {
+  background: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+</style>
 
   </head>
 
@@ -223,9 +248,9 @@
                 </div>
 
                 <div class="my-3">
-                  <div class="loading">Loading</div>
+                  <div class="loading"></div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message"></div>
                 </div>
 
                 <button type="submit" class="submit-btn">
@@ -405,6 +430,47 @@
       });
     });
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.has('mailsend')) {
+        var myModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        myModal.show();
+
+        // OPTIONAL: remove ?mailsend from URL
+        window.history.replaceState({}, document.title, "contact.html");
+    }
+
+});
+</script>
+
+
 
 </body>
+<!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-3">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100">Thank You!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>Your message has been submitted successfully.</p>
+      </div>
+
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 </html>

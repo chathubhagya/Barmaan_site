@@ -1,0 +1,126 @@
+2026-03-24 03:39:13 - Email to: mmvchathubhagya@gmail.com
+Subject: Contact Form: Test
+Message: 
+New contact form submission from your website:
+
+Name: Test
+Email: test@example.com
+Phone: Not provided
+
+Subject: Test
+
+Message:
+Hello
+
+---
+This message was sent from your website contact form.
+
+Headers: From: Barmaan <noreply@barmaan.co>
+Reply-To: test@example.com
+Content-Type: text/plain; charset=UTF-8
+
+
+2026-03-24 03:39:13 - Email to: test@example.com
+Subject: Thank you for contacting Barmaan
+Message: 
+Dear Test,
+
+Thank you for contacting Barmaan. We have received your message and will get back to you soon.
+
+Your message details:
+Subject: Test
+
+We typically respond within 24-48 hours.
+
+Best regards,
+Barmaan Team
+info@barmaan.co
+
+Headers: From: Barmaan <noreply@barmaan.co>
+Content-Type: text/plain; charset=UTF-8
+
+
+2026-03-24 03:39:44 - Email to: mmvchathubhagya@gmail.com
+Subject: Contact Form: Hello
+Message: 
+New contact form submission from your website:
+
+Name: John Doe
+Email: john@example.com
+Phone: Not provided
+
+Subject: Hello
+
+Message:
+Test message
+
+---
+This message was sent from your website contact form.
+
+Headers: From: Barmaan <noreply@barmaan.co>
+Reply-To: john@example.com
+Content-Type: text/plain; charset=UTF-8
+
+
+2026-03-24 03:39:44 - Email to: john@example.com
+Subject: Thank you for contacting Barmaan
+Message: 
+Dear John Doe,
+
+Thank you for contacting Barmaan. We have received your message and will get back to you soon.
+
+Your message details:
+Subject: Hello
+
+We typically respond within 24-48 hours.
+
+Best regards,
+Barmaan Team
+info@barmaan.co
+
+Headers: From: Barmaan <noreply@barmaan.co>
+Content-Type: text/plain; charset=UTF-8
+
+
+2026-03-24 03:44:26 - Email to: mmvchathubhagya@gmail.com
+Subject: Contact Form: hello
+Message: 
+New contact form submission from your website:
+
+Name: S.H.Chathuri bhagya
+Email: mmvchathubhagya@gmail.com
+Phone: 0766079953
+
+Subject: hello
+
+Message:
+iyguoh
+
+---
+This message was sent from your website contact form.
+
+Headers: From: Barmaan <noreply@barmaan.co>
+Reply-To: mmvchathubhagya@gmail.com
+Content-Type: text/plain; charset=UTF-8
+
+
+2026-03-24 03:44:26 - Email to: mmvchathubhagya@gmail.com
+Subject: Thank you for contacting Barmaan
+Message: 
+Dear S.H.Chathuri bhagya,
+
+Thank you for contacting Barmaan. We have received your message and will get back to you soon.
+
+Your message details:
+Subject: hello
+
+We typically respond within 24-48 hours.
+
+Best regards,
+Barmaan Team
+info@barmaan.co
+
+Headers: From: Barmaan <noreply@barmaan.co>
+Content-Type: text/plain; charset=UTF-8
+
+

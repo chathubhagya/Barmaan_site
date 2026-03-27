@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Contact Form</title>
+</head>
+<body>
+    <h1>Test Contact Form Submission</h1>
+
+    <form id="testForm">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="name" value="Test User" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" value="test@example.com" required>
+        </div>
+        <div>
+            <label>Phone:</label>
+            <input type="tel" name="phone" value="123-456-7890">
+        </div>
+        <div>
+            <label>Subject:</label>
+            <input type="text" name="subject" value="Test Subject" required>
+        </div>
+        <div>
+            <label>Message:</label>
+            <textarea name="message" required>This is a test message from the test form.</textarea>
+        </div>
+        <button type="submit">Test Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+    document.getElementById('testForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const resultDiv = document.getElementById('result');
+
+        resultDiv.innerHTML = '<p>Submitting...</p>';
+
+        fetch('forms/contact.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            console.log('Status:', response.status);
+            console.log('Content-Type:', response.headers.get('content-type'));
+            return response.text(); // Get as text first to see what we get
+        })
+        .then(text => {
+            console.log('Raw response:', text);
+            resultDiv.innerHTML = '<pre>' + text + '</pre>';
+
+            // Try to parse as JSON
+            try {
+                const json = JSON.parse(text);
+                resultDiv.innerHTML += '<p style="color: green;">✓ Valid JSON response</p>';
+            } catch (e) {
+                resultDiv.innerHTML += '<p style="color: red;">✗ Invalid JSON: ' + e.message + '</p>';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            resultDiv.innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+        });
+    });
+    </script>
+</body>
+</html>
